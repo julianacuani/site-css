@@ -1,0 +1,75 @@
+p{
+    color: white;
+    font-size: 15px;
+    font-family: arial;
+}
+body{
+    background-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header{
+    background-color:#f7283d;
+    height: 140px;
+    padding: 10px;
+}
+
+footer{
+    clear: both;
+    background-color: #f7283d;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1{
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+}
+
+#div_principal{
+     background-image: url('img.jpg');
+     clear: both;
+     background-size: 100%;
+     min-height: 400px;
+     padding: 50px 0 0 0;
+     }
+
+#logo{
+    float: left;
+}
+
+#menu{
+    margin-top: 120px;
+    float: right;
+}
+
+#menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;    
+}
+
+#menu a:hover{
+    background-color: black;
+    color: #f7283d;
+
+}
+
+/* Declarando class container (Para declarar classe é sempre ponto classe - .classe) */
+.container{
+width: 1300px;
+margin: 0 auto;
+}
+
+.efeito{
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 50px 0 50px;
+}
