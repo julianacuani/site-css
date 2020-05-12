@@ -1,75 +1,99 @@
-p{
-    color: white;
-    font-size: 15px;
-    font-family: arial;
-}
-body{
-    background-color: white;
-}
-
+/* reset do css*/
 *{
     margin: 0;
     padding: 0;
     font-family: Arial;
+    box-sizing: border-box;
+}
+
+p{
+    color: #00a5a7;
+    font-size: 15px;
+    font-family: arial;
+}
+
+body{
+    background-color: white;
+    font-size: 12px;
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media(min-width: 400px){
+    body{
+        font-size: 14px;
+    }
 }
 
 header{
-    background-color:#f7283d;
+    background-color: #545454;
     height: 140px;
     padding: 10px;
 }
 
 footer{
     clear: both;
-    background-color: #f7283d;
-    height: 30px;
+    background-color: #545454;
+    height: 50px;
     text-align: center;
     padding: 10px;
-    text-shadow: 1px 1px 1px black;
 }
 
 h1{
     color: black;
     text-shadow: 1px 1px 1px white;
     text-align: center;
-}
+ }
 
-#div_principal{
-     background-image: url('img.jpg');
+.div_principal{
+     background-color: #00a5a7;
      clear: both;
      background-size: 100%;
-     min-height: 400px;
+     min-height: 435px;
      padding: 50px 0 0 0;
      }
 
-#logo{
+.logo {
     float: left;
 }
 
-#menu{
-    margin-top: 120px;
+.menu ul{
     float: right;
+    display: flex;
+    margin-top: 100px;
 }
 
-#menu a{
+.menu li{
+      list-style: none;
+}
+
+.menu a{
     padding: 10px;
     text-decoration: none;
-    color: black;    
+    color: #00a5a7;    
 }
 
-#menu a:hover{
-    background-color: black;
-    color: #f7283d;
-
-}
-
-/* Declarando class container (Para declarar classe é sempre ponto classe - .classe) */
-.container{
-width: 1300px;
-margin: 0 auto;
+.menu a:hover{
+    background-color: #00a5a7;
+    color: #545454;
 }
 
 .efeito{
     background-color:rgba(0, 0, 0, 0.5);
     padding: 50px 0 50px;
+}
+
+.inlogo{
+    margin-top: 250px;
+    margin-left: 130px;
+}
+
+.tellogo{
+    margin-top: 250px;
+    margin-left: 170px;
+}
+
+.maillogo{
+    margin-top: 250px;
+    margin-left: 230px;
+    
 }
