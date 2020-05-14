@@ -10,6 +10,8 @@ p{
     color: #200101c4;
     font-size: 15px;
     font-family: arial;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 body{
@@ -41,11 +43,23 @@ footer{
 
 h1{
     color: #200101c4;
+    margin-top: -30px;
+    text-align: center;
+ }
+
+h3{
+    color: #200101c4;
+    margin-left: 30px;
+    margin-right: 30px;
+ }
+
+h5{
+    color: #C0C0C0;
     text-align: center;
  }
 
 .div_principal{
-     background-color: #7a666688;
+     background-color: #c0a9a97a;
      clear: both;
      background-size: 100%;
      min-height: 435px;
@@ -82,8 +96,8 @@ h1{
 .menu li a:hover{
     background: #725c5c;  /* cor do fundinho quando passsa o mouse*/
     color:#C0C0C0;           /*cor da letra quando passa o mouse*/
-    -moz-box-shadow:0 3px 10px 0 #CCC; 
-    -webkit-box-shadow:0 3px 10px 0 #ccc; 
+    -moz-box-shadow:0 3px 10px 0 #CCC;   /* moz é para o efeito funcionar no Google Chrome e Safari */
+    -webkit-box-shadow:0 3px 10px 0 #ccc;  /* webkit é para o efeito funcionar no firefox*/
     text-shadow:0px 0px 5px #fff; 
 }
 .menu li  ul{
