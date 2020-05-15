@@ -38,6 +38,7 @@ footer{
     background: linear-gradient(to bottom, #200101c4 0%, #725c5c 100%);
     height: 50px;
     text-align: center;
+    text-decoration: none;
     padding: 10px;
 }
 
@@ -93,7 +94,7 @@ h5{
     display: block;
 }
  
-.menu li a:hover{
+.menu li a:hover{          /*hover é quando passa o mouse*/
     background: #725c5c;  /* cor do fundinho quando passsa o mouse*/
     color:#C0C0C0;           /*cor da letra quando passa o mouse*/
     -moz-box-shadow:0 3px 10px 0 #CCC;   /* moz é para o efeito funcionar no Google Chrome e Safari */
@@ -127,33 +128,57 @@ img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
+    transition: transform 500ms;
 }
 
+img:hover{            /*hover é quando passa o mouse*/
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px white;
+}
 
+.contato {
+    text-align: center;
+}
+
+.contato a{
+    color: whitesmoke;
+    font-size: 9em;
+    text-decoration: none;
+}
+
+.contato a:active,       /*é para dar um brilhinho no celular tb, ja que não tem mouse é no click*/
+.contato a:hover{        /*hover é quando passa o mouse*/
+    text-decoration: none;
+    text-shadow: 0px 0px 10px white;
+}
 
 .grid{
     display: grid;
     gap: 1em;
-    grid-template-columns: 240px;
+    grid-template-columns: 230px;
     justify-content: center;
 }
 
-@media (min-width: 515px){
+.grid a {
+    justify-content: center;
+}
+
+@media (min-width: 435px){
     .grid{
-     grid-template-columns: repeat(2, 240px);
+     grid-template-columns: repeat(2, 200px);
     }
 }
 
-@media (min-width: 830px){
+@media (min-width: 650px){
     .grid{
-     grid-template-columns: repeat(3, 240px);
+     grid-template-columns: repeat(3, 200px);
      justify-content: center;
     }
 }
 
 @media (min-width: 1005px){
     .grid{
-     grid-template-columns: repeat(4, 240px);
+     grid-template-columns: repeat(4, 250px);
      justify-content: center;
     }
 }
